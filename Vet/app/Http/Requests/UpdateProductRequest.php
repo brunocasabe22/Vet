@@ -29,7 +29,7 @@ class UpdateProductRequest extends FormRequest
             'name'=>'string|required|unique:products,name, '.$this->route('product')->id.'|max:255',
             'sell_price'=>'required|',
             'category_id'=>'integer|required|exists:App\User\Category,id',
-             'provider_id'=>'integer|required|exists:App\User\Provider,id',
+            'provider_id'=>'integer|required|exists:App\User\Provider,id',
     
                
       
